@@ -6,6 +6,7 @@
 1. teams - team id, team_leader
 1. departments - department_id, department_name 
 1. meeting_types - meeting_ID, meeting_type
+1. login - login_id, password
 
 ## Assumptions
 1. employees can work in only one team, but a team can have many employees
@@ -13,4 +14,4 @@
 1. appoitments must be tied to a room
 1. room must be tied to a building
 1. There can be only one appointment per room for a given time
-1. 
+1. employees can reserve multiple rooms
