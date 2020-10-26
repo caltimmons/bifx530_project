@@ -11,7 +11,8 @@
 ## Assumptions
 1. employees can work in only one team, but a team can have many employees
 1. employees belong to only one department
-1. appoitments must be tied to a room
+1. appoitments must be tied to a room and and employee
 1. room must be tied to a building
 1. There can be only one appointment per room for a given time
 1. employees can reserve multiple rooms
+1. each employee is given one login and each login must belong to an employee
