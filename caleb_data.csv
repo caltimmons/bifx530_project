@@ -1,12 +1,11 @@
-﻿employee_id,name,department,login,password,name,login
-,,,,,copied,copied
-30000000,"""John Doe""",8,"""jDoe""","""password""","""John Doe""","""jDoe"""
-30000001,,,,,,
-30000002,,,,,,
-30000003,,,,,,
-30000004,,,,,,
-30000005,,,,,,
-30000006,,,,,,
-30000007,,,,,,
-30000008,,,,,,
-30000009,,,,,,
+﻿employee,name,department,login,password,name,login
+30000000,”Carrie Fisher”,1,”cfisher”,”password1”,”Carrie Fisher”,”cfisher”
+30000001,”Harrison Ford”,3,”hford”,”password2”,”Harrison Ford”,”hford”
+30000002,”John Boyega”,9,”jboyega”,”password3”,”John Boyega”,”jboyega”
+30000003,”Daisy Ridley”,7,”dridley”,”password4”,”Daisy Ridley”,”dridley”
+30000004,”Adam Driver”,5,”adriver”,”password5”,”Adam Driver”,”adriver”
+30000005,”Mark Hamill”,2,”mhamill”,”password6”,”Mark Hamill”,”mhamill”
+30000006,”James Jones”,3,”jjones”,”password7”,”James Jones”,”jjones”
+30000007,”John Doe”,1,”jdoe”,”password8”,”John Doe”,”jdoe”
+30000008,”Mike Smith”,8,”msmith”,”password9”,”Mike Smith”,”msmith”
+30000009,”Jane Olson”,10,”jolson”,”password10”,”Jane Olson”,”jolson”
