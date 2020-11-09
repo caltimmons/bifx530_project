@@ -1,14 +1,16 @@
 use cat17db;
 /* Database Table Creation */
 /* Drop any existing tables. Any errors are ignored. */
-DROP TABLE IF EXISTS Employee;
-DROP TABLE IF EXISTS Team;
+DROP TABLE IF EXISTS Employee_Login;
+DROP TABLE IF EXISTS Employee_Team;
+DROP TABLE IF EXISTS Reserves;
 DROP TABLE if EXISTS Room;
+DROP TABLE IF EXISTS Team;
+DROP TABLE IF EXISTS Login;
+DROP TABLE IF EXISTS Employee;
 DROP TABLE IF EXISTS Department;
 DROP TABLE IF EXISTS Building;
-DROP TABLE IF EXISTS Employee_Login;
-DROP TABLE IF EXISTS Login;
-DROP TABLE IF EXISTS Reserves;
+
 /* Add each table. */
 
 CREATE TABLE Department(
@@ -41,7 +43,6 @@ CREATE TABLE Employee (
 Employee_ID VARCHAR(20),
 name VARCHAR(50),
 Department_ID VARCHAR(20),
-team_id varchar(20),
 PRIMARY KEY (Employee_ID),
 FOREIGN KEY (Department_ID) REFERENCES Department(Department_ID)
 ON UPDATE CASCADE) ENGINE=InnoDB;
@@ -61,12 +62,14 @@ PRIMARY KEY (Team_ID),
 FOREIGN KEY (Employee_ID) REFERENCES Employee(Employee_ID)
 ON UPDATE CASCADE) ENGINE=InnoDB;
 
-create table employee_team(
-  employee_id varchar(20),
-  team_id varchar(20),
-  primary key (employee_id, team_id),
-  FOREIGN KEY (Employee_ID) REFERENCES Employee(Employee_ID),
-  foreign key (team_id) references Team(team_id)) engine=InnoDB;
+create table Employee_Team(
+employee_id varchar(20),
+team_id varchar(20),
+primary key (employee_id, team_id),
+FOREIGN KEY (Employee_ID) REFERENCES Employee(Employee_ID)
+  ON UPDATE CASCADE,
+foreign key (team_id) references Team(team_id)
+  ON UPDATE CASCADE) engine=InnoDB;
 
 CREATE TABLE Reserves( 
 Login_ID VARCHAR(20),
