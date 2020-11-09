@@ -61,3 +61,50 @@ insert into employee_login(login_id, employee_id) values(20000007,”Ktaylor”)
 insert into employee_login(login_id, employee_id) values(20000008,”Tbrown”);
 insert into employee_login(login_id, employee_id) values(20000009,”Cjones”);
 insert into employee_login(login_id, employee_id) values(200000010,”Mmiller”);
+
+
+insert into employees(employee_id, name, department_id, team_id) values(30000000,”Carrie Fisher”,1,1);
+insert into employees(employee_id, name, department_id, team_id) values(30000001,”Harrison Ford”,3,1);
+insert into employees(employee_id, name, department_id, team_id) values(30000002,”John Boyega”,9,1);
+insert into employees(employee_id, name, department_id, team_id) values(30000003,”Daisy Ridley”,7,2);
+insert into employees(employee_id, name, department_id, team_id) values(30000004,”Adam Driver”,5,2);
+insert into employees(employee_id, name, department_id, team_id) values(30000005,”Mark Hamill”,2,2);
+insert into employees(employee_id, name, department_id, team_id) values(30000006,”James Jones”,3,3);
+insert into employees(employee_id, name, department_id, team_id) values(30000007,”John Doe”,1,3);
+insert into employees(employee_id, name, department_id, team_id) values(30000008,”Mike Smith”,8,3);
+insert into employees(employee_id, name, department_id, team_id) values(30000009,”Jane Olson”,10,4);
+insert into employees(employee_id, name, department_id, team_id) values(20000001,”Kelly Smith”,1,1);
+insert into employees(employee_id, name, department_id, team_id) values(20000002,”James Johnson”,3,5);
+insert into employees(employee_id, name, department_id, team_id) values(20000003,”Maria Miller”,5,6);
+insert into employees(employee_id, name, department_id, team_id) values(20000004,”Robert Clark”,2,7);
+insert into employees(employee_id, name, department_id, team_id) values(20000005,”George Davis”,9,8);
+insert into employees(employee_id, name, department_id, team_id) values(20000006,”David Wilson”,7,2);
+insert into employees(employee_id, name, department_id, team_id) values(20000007,”Kathy Taylor”,8,10);
+insert into employees(employee_id, name, department_id, team_id) values(20000008,”Tina Brown”,5,6);
+insert into employees(employee_id, name, department_id, team_id) values(20000009,”Courtney Jones”,2,6);
+insert into employees(employee_id, name, department_id, team_id) values(20000010,”Mary Miller”,10,5);
+
+
+insert into department(department_id, department_name) values(1,”Accounting”);
+insert into department(department_id, department_name) values(2,”Sales”);
+insert into department(department_id, department_name) values(3,”Quality Control”);
+insert into department(department_id, department_name) values(4,”Human Resources”);
+insert into department(department_id, department_name) values(5,”Maintenance”);
+insert into department(department_id, department_name) values(6,”Information Tech”);
+insert into department(department_id, department_name) values(7,”Validation”);
+insert into department(department_id, department_name) values(8,”Manufacturing”);
+insert into department(department_id, department_name) values(9,”Production”);
+insert into department(department_id, department_name) values(10,”Lab Services”);
+
+
+insert into employees(employee_id, name, department_id, team_id) values(30000000,”Carrie Fisher”,1,1);
+insert into employees(employee_id, name, department_id, team_id) values(30000001,”Harrison Ford”,3,1);
+insert into employees(employee_id, name, department_id, team_id) values(30000002,”John Boyega”,9,1);
+insert into employees(employee_id, name, department_id, team_id) values(30000003,”Daisy Ridley”,7,2);
+insert into employees(employee_id, name, department_id, team_id) values(30000004,”Adam Driver”,5,2);
+insert into employees(employee_id, name, department_id, team_id) values(30000005,”Mark Hamill”,2,2);
+insert into employees(employee_id, name, department_id, team_id) values(30000006,”James Jones”,3,3);
+insert into employees(employee_id, name, department_id, team_id) values(30000007,”John Doe”,1,3);
+insert into employees(employee_id, name, department_id, team_id) values(30000008,”Mike Smith”,8,3);
+insert into employees(employee_id, name, department_id, team_id) values(30000009,”Jane Olson”,10,4);
+
