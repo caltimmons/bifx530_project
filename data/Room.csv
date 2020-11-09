@@ -1,0 +1,11 @@
+Room_no,Building_no,Capacity,av_equipment
+B1R1,B1,25,projector
+B1R2,B1,10,projector
+B1R3,B1,60,projector
+B2R1,B2,10,printer
+B2R2,B2,20,printer
+B3R1,B3,9,printer
+B3R2,B3,36,printer
+B4R1,B4,50,projector
+B4R2,B4,75,projector
+B4R3,B4,250,projector
