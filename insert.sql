@@ -8,6 +8,16 @@ insert into employees(employee_id, name, department_id, team_id) values(30000006
 insert into employees(employee_id, name, department_id, team_id) values(30000007,”John Doe”,1,3);
 insert into employees(employee_id, name, department_id, team_id) values(30000008,”Mike Smith”,8,3);
 insert into employees(employee_id, name, department_id, team_id) values(30000009,”Jane Olson”,10,4);
+insert into employees(employee_id, name, department_id, team_id) values(20000001,”Kelly Smith”,1,1);
+insert into employees(employee_id, name, department_id, team_id) values(20000002,”James Johnson”,3,5);
+insert into employees(employee_id, name, department_id, team_id) values(20000003,”Maria Miller”,5,6);
+insert into employees(employee_id, name, department_id, team_id) values(20000004,”Robert Clark”,2,7);
+insert into employees(employee_id, name, department_id, team_id) values(20000005,”George Davis”,9,8);
+insert into employees(employee_id, name, department_id, team_id) values(20000006,”David Wilson”,7,2);
+insert into employees(employee_id, name, department_id, team_id) values(20000007,”Kathy Taylor”,8,10);
+insert into employees(employee_id, name, department_id, team_id) values(20000008,”Tina Brown”,5,6);
+insert into employees(employee_id, name, department_id, team_id) values(20000009,”Courtney Jones”,2,6);
+insert into employees(employee_id, name, department_id, team_id) values(20000010,”Mary Miller”,10,5);
 
 insert into login(login_id, password) values(”cfisher”,”password1”);
 insert into login(login_id, password) values(”hford”,”password2”);
@@ -19,6 +29,17 @@ insert into login(login_id, password) values(”jjones”,”password7”);
 insert into login(login_id, password) values(”jdoe”,”password8”);
 insert into login(login_id, password) values(”msmith”,”password9”);
 insert into login(login_id, password) values(”jolson”,”password10”);
+insert into login(login_id, password) values(”Ksmith”,”password11”);
+insert into login(login_id, password) values(”Jjonson”,”password12”);
+insert into login(login_id, password) values(”Mmiller”,”password13”);
+insert into login(login_id, password) values(”Rclark”,”password14”);
+insert into login(login_id, password) values(”Gdavis”,”password15”);
+insert into login(login_id, password) values(”Dwilson”,”password16”);
+insert into login(login_id, password) values(”Ktaylor”,”password17”);
+insert into login(login_id, password) values(”Tbrown”,”password18”);
+insert into login(login_id, password) values(”Cjones”,”password19”);
+insert into login(login_id, password) values(”Mmiller”,”password20”);
+
 
 insert into employee_login(login_id, employee_id) values(30000000,”cfisher”);
 insert into employee_login(login_id, employee_id) values(30000001,”hford”);
@@ -30,3 +51,13 @@ insert into employee_login(login_id, employee_id) values(30000006,”jjones”);
 insert into employee_login(login_id, employee_id) values(30000007,”jdoe”);
 insert into employee_login(login_id, employee_id) values(30000008,”msmith”);
 insert into employee_login(login_id, employee_id) values(30000009,”jolson”);
+insert into employee_login(login_id, employee_id) values(20000001,”Ksmith”);
+insert into employee_login(login_id, employee_id) values(20000002,”Jjohnson”);
+insert into employee_login(login_id, employee_id) values(20000003,”Mmiller”);
+insert into employee_login(login_id, employee_id) values(20000004,”Rclark”);
+insert into employee_login(login_id, employee_id) values(20000005,”Gdavis”);
+insert into employee_login(login_id, employee_id) values(20000006,”Dwilson”);
+insert into employee_login(login_id, employee_id) values(20000007,”Ktaylor”);
+insert into employee_login(login_id, employee_id) values(20000008,”Tbrown”);
+insert into employee_login(login_id, employee_id) values(20000009,”Cjones”);
+insert into employee_login(login_id, employee_id) values(200000010,”Mmiller”);
