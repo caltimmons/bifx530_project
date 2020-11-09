@@ -28,7 +28,12 @@ Employee_ID VARCHAR(20),
 PRIMARY KEY (Team_ID),
 FOREIGN KEY (Employee_ID) REFERENCES Employee(Employee_ID)
 ON UPDATE CASCADE) ENGINE=InnoDB;
-
+create table employee_team(
+  employee_id varchar(8),
+  team_id varchar(8),
+  primary key (employee_id, team_id),
+  foreign key (employee_id) references employee(employee_id),
+  foreign key (team_id) reference team(team_id)) engine=InnoDB;
 CREATE TABLE Room(
 Room_no VARCHAR(20),
 Capacity VARCHAR(20),
