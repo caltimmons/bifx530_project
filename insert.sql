@@ -1,3 +1,32 @@
 insert into employees(employee_id, name, department_id, team_id) values(30000000,”Carrie Fisher”,1,1);
+insert into employees(employee_id, name, department_id, team_id) values(30000001,”Harrison Ford”,3,1);
+insert into employees(employee_id, name, department_id, team_id) values(30000002,”John Boyega”,9,1);
+insert into employees(employee_id, name, department_id, team_id) values(30000003,”Daisy Ridley”,7,2);
+insert into employees(employee_id, name, department_id, team_id) values(30000004,”Adam Driver”,5,2);
+insert into employees(employee_id, name, department_id, team_id) values(30000005,”Mark Hamill”,2,2);
+insert into employees(employee_id, name, department_id, team_id) values(30000006,”James Jones”,3,3);
+insert into employees(employee_id, name, department_id, team_id) values(30000007,”John Doe”,1,3);
+insert into employees(employee_id, name, department_id, team_id) values(30000008,”Mike Smith”,8,3);
+insert into employees(employee_id, name, department_id, team_id) values(30000009,”Jane Olson”,10,4);
+
 insert into login(login_id, password) values(”cfisher”,”password1”);
+insert into login(login_id, password) values(”hford”,”password2”);
+insert into login(login_id, password) values(”jboyega”,”password3”);
+insert into login(login_id, password) values(”dridley”,”password4”);
+insert into login(login_id, password) values(”adriver”,”password5”);
+insert into login(login_id, password) values(”mhamill”,”password6”);
+insert into login(login_id, password) values(”jjones”,”password7”);
+insert into login(login_id, password) values(”jdoe”,”password8”);
+insert into login(login_id, password) values(”msmith”,”password9”);
+insert into login(login_id, password) values(”jolson”,”password10”);
+
 insert into employee_login(login_id, employee_id) values(30000000,”cfisher”);
+insert into employee_login(login_id, employee_id) values(30000001,”hford”);
+insert into employee_login(login_id, employee_id) values(30000002,”jboyega”);
+insert into employee_login(login_id, employee_id) values(30000003,”dridley”);
+insert into employee_login(login_id, employee_id) values(30000004,”adriver”);
+insert into employee_login(login_id, employee_id) values(30000005,”mhamill”);
+insert into employee_login(login_id, employee_id) values(30000006,”jjones”);
+insert into employee_login(login_id, employee_id) values(30000007,”jdoe”);
+insert into employee_login(login_id, employee_id) values(30000008,”msmith”);
+insert into employee_login(login_id, employee_id) values(30000009,”jolson”);
