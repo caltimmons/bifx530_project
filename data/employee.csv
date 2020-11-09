@@ -1,11 +1,11 @@
-﻿employee,name,department
-30000000,”Carrie Fisher”,1
-30000001,”Harrison Ford”,3
-30000002,”John Boyega”,9
-30000003,”Daisy Ridley”,7
-30000004,”Adam Driver”,5
-30000005,”Mark Hamill”,2
-30000006,”James Jones”,3
-30000007,”John Doe”,1
-30000008,”Mike Smith”,8
-30000009,”Jane Olson”,10
+﻿employee,name,department,team_id
+30000000,”Carrie Fisher”,1,1
+30000001,”Harrison Ford”,3,1
+30000002,”John Boyega”,9,2
+30000003,”Daisy Ridley”,7,3
+30000004,”Adam Driver”,5,4
+30000005,”Mark Hamill”,2,6
+30000006,”James Jones”,3,7
+30000007,”John Doe”,1,9
+30000008,”Mike Smith”,8,10
+30000009,”Jane Olson”,10,5
