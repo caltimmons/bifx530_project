@@ -49,8 +49,8 @@ Location VARCHAR(20),
 PRIMARY KEY (Room_no)) ENGINE=InnoDB;
 
 CREATE TABLE Login(
-Building_no VARCHAR(20),
-Building_name VARCHAR(20),
+login_id VARCHAR(20),
+password VARCHAR(20),
 Location VARCHAR(20),
 PRIMARY KEY (Room_no)) ENGINE=InnoDB;
 
