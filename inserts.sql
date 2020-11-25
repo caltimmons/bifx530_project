@@ -61,16 +61,16 @@ insert into team(team_id, team_name, employee_id) values(6,”Trump”,20000008)
 insert into team(team_id, team_name, employee_id) values(6,”Trump”,20000009);
 insert into team(team_id, team_name, employee_id) values(5,”Star”,20000010);
 
-insert into reserves(login_id, room_no, meeting_date, meeting_type, start_time, end_time) values(”cfisher”,1,110920,”Training”,1000,1130);
-insert into reserves(login_id, room_no, meeting_date, meeting_type, start_time, end_time) values(”hford”,1,111120,”Training”,1400,1530);
-insert into reserves(login_id, room_no, meeting_date, meeting_type, start_time, end_time) values(”jboyega”,2,112520,”Brainstorming”,0900,1100);
-insert into reserves(login_id, room_no, meeting_date, meeting_type, start_time, end_time) values(”dridley”,2,120320,”Tier Meeting”,0930,1030);
-insert into reserves(login_id, room_no, meeting_date, meeting_type, start_time, end_time) values(”adriver”,2,031220,”Skype”,1130,1200)
-insert into reserves(login_id, room_no, meeting_date, meeting_type, start_time, end_time) values(”mhamill”,3,121020,”skype”,0900,1030);
-insert into reserves(login_id, room_no, meeting_date, meeting_type, start_time, end_time) values(”jjones”,2,111020,”Orientation”,0830,1430);
-insert into reserves(login_id, room_no, meeting_date, meeting_type, start_time, end_time) values(”jdoe”,3,121220,”Brainstorming”,1600,1700);
-insert into reserves(login_id, room_no, meeting_date, meeting_type, start_time, end_time) values(”msmith”,4,122320,”Brainstorming”,1400,1500);
-insert into reserves(login_id, room_no, meeting_date, meeting_type, start_time, end_time) values(”jolson”,4,122120,”Training”,1000,1130);
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”cfisher”,30000000,100,1,110920,”Training”,1000,1130);
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”hford”,30000001,100,1,111120,”Training”,1400,1530);
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jboyega”,30000002,100,2,112520,”Brainstorming”,0900,1100);
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”dridley”,30000003,100,2,120320,”Tier Meeting”,0930,1030);
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”adriver”,30000004,100,2,031220,”Skype”,1130,1200)
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”mhamill”,30000005,100,3,121020,”skype”,0900,1030);
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jjones”,30000006,100,2,111020,”Orientation”,0830,1430);
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jdoe”,30000007,100,3,121220,”Brainstorming”,1600,1700);
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”msmith”,30000008,100,4,122320,”Brainstorming”,1400,1500);
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jolson”,30000009,100,4,122120,”Training”,1000,1130);
 
 insert into department(department_id, department_name) values(1,”Accounting”);
 insert into department(department_id, department_name) values(2,”Sales”);
