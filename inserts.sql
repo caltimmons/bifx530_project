@@ -70,7 +70,7 @@ insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, 
 insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jjones”,30000006,100,2,111020,”Orientation”,0830,1430);
 insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jdoe”,30000007,100,3,121220,”Brainstorming”,1600,1700);
 insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”msmith”,30000008,100,4,122320,”Brainstorming”,1400,1500);
-insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jolson”,30000009,100,4,122120,”Training”,1000,1130)
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jolson”,30000009,100,4,122120,”Training”,1000,1130);
 
 insert into department(department_id, department_name) values(1,”Accounting”);
 insert into department(department_id, department_name) values(2,”Sales”);
