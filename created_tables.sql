@@ -67,5 +67,5 @@ meeting_type VARCHAR(20),
 start_time Time,
 end_time Time,
 PRIMARY KEY (login_id, meeting_date, start_time, room_no, employee_id, building_no),
-FOREIGN KEY (login_id, employee_id) REFERENCES Login(login_id, employee_id),
-FOREIGN KEY (room_no, building_no) REFERENCES Room(room_no, building_no)) ENGINE=InnoDB;
+FOREIGN KEY (login_id, employee_id) REFERENCES login(login_id, employee_id),
+FOREIGN KEY (room_no, building_no) REFERENCES room(room_no, building_no)) ENGINE=InnoDB;
