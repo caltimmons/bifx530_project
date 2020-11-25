@@ -1,6 +1,9 @@
+/* Database Table Creation 
+   Drop any existing tables with foreign keys first
+*/
+
 use cat17db;
-/* Database Table Creation */
-/* Drop any existing tables. Any errors are ignored. */
+
 DROP TABLE IF EXISTS reserves;
 DROP TABLE if EXISTS room;
 DROP TABLE IF EXISTS team;
