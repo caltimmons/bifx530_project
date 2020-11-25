@@ -1,34 +1,34 @@
 use cat17db;
 /* Database Table Creation */
 /* Drop any existing tables. Any errors are ignored. */
-DROP TABLE IF EXISTS Reserves;
-DROP TABLE if EXISTS Room;
-DROP TABLE IF EXISTS Team;
-DROP TABLE IF EXISTS Login;
-DROP TABLE IF EXISTS Employee;
-DROP TABLE IF EXISTS Department;
-DROP TABLE IF EXISTS Building;
+DROP TABLE IF EXISTS reserves;
+DROP TABLE if EXISTS room;
+DROP TABLE IF EXISTS team;
+DROP TABLE IF EXISTS login;
+DROP TABLE IF EXISTS employee;
+DROP TABLE IF EXISTS department;
+DROP TABLE IF EXISTS building;
 
 /* Add each table. */
 
-CREATE TABLE Department(
+CREATE TABLE department(
 Department_ID VARCHAR(20),
-Department_Name VARCHAR(20),
-PRIMARY KEY (Department_ID)) ENGINE=InnoDB;
+department_name VARCHAR(20),
+PRIMARY KEY (department_id)) ENGINE=InnoDB;
 
-CREATE TABLE Building(
-Building_no VARCHAR(20),
-Building_name VARCHAR(20),
-Location VARCHAR(20),
+CREATE TABLE building(
+building_no VARCHAR(20),
+building_name VARCHAR(20),
+location VARCHAR(20),
 PRIMARY KEY (building_no)) ENGINE=InnoDB;
 
-CREATE TABLE Room(
-Room_no VARCHAR(20),
-Capacity VARCHAR(20),
-Building_no VARCHAR(20) NOT NULL
+CREATE TABLE room(
+room_no VARCHAR(20),
+capacity VARCHAR(20),
+building_no VARCHAR(20) NOT NULL
 av_equipment VARCHAR(20),
 PRIMARY KEY (room_no, building_no),
-FOREIGN KEY (Building_no) REFERENCES Building(Building_no)
+FOREIGN KEY (building_no) REFERENCES building(building_no)
 ON DELETE CASCADE
 ON UPDATE CASCADE) ENGINE=InnoDB;
 
@@ -36,36 +36,36 @@ CREATE TABLE Login(
 login_id VARCHAR(20),
 employee_id VARCHAR(20),
 password VARCHAR(20),
-PRIMARY KEY (login_id)) ENGINE=InnoDB;
-FOREIGN KEY (Employee_ID) REFERENCES Employee(Employee_ID)
+PRIMARY KEY (login_id)
+FOREIGN KEY (employee_id) REFERENCES employee(employee_id)) ENGINE=InnoDB;
 
-CREATE TABLE Employee (
-Employee_ID VARCHAR(20),
+CREATE TABLE employee(
+employee_id VARCHAR(20),
 name VARCHAR(50),
-Department_ID VARCHAR(20) NOT NULL
-Team_ID VARCHAR(20),
-PRIMARY KEY (Employee_ID),
-FOREIGN KEY (Team_ID) REFERENCES Team(Team_ID),
-FOREIGN KEY (Department_ID) REFERENCES Department(Department_ID)
+department_id VARCHAR(20) NOT NULL
+team_id VARCHAR(20),
+PRIMARY KEY (employee_id),
+FOREIGN KEY (team_id) REFERENCES team(team_id),
+FOREIGN KEY (department_id) REFERENCES department(department_id)
 ON UPDATE CASCADE) ENGINE=InnoDB;
 
-CREATE TABLE Team(
-Team_ID VARCHAR(20),
-Team_name VARCHAR(20),
-Employee_ID VARCHAR(20) NOT NULL
-PRIMARY KEY (Team_ID),
-FOREIGN KEY (Employee_ID) REFERENCES Employee(Employee_ID)
+CREATE TABLE team(
+team_id VARCHAR(20),
+team_name VARCHAR(20),
+employee_id VARCHAR(20) NOT NULL
+PRIMARY KEY (team_id),
+FOREIGN KEY (employee_id) REFERENCES employee(employee_id)
 ON UPDATE CASCADE) ENGINE=InnoDB;
 
-CREATE TABLE Reserves( 
-Login_ID VARCHAR(20),
+CREATE TABLE reserves( 
+login_id VARCHAR(20),
 room_no VARCHAR(20),
-Employee_ID VARCHAR(20),
+employee_id VARCHAR(20),
 building_no VARCHAR(20),
-date Date,
+meeting_date Date,
 meeting_type VARCHAR(20),
 start_time Time,
 end_time Time,
-PRIMARY KEY (Login_ID, room_no, Employee_ID, Building_no),
-FOREIGN KEY (Login_ID, Employee_ID) REFERENCES Login(Login_ID, Employee_ID),
+PRIMARY KEY (login_id, room_no, employee_id, building_no),
+FOREIGN KEY (login_id, employee_id) REFERENCES Login(login_id, employee_id)
 FOREIGN KEY (room_no, building_no) REFERENCES Room(room_no, building_no)) ENGINE=InnoDB;
