@@ -94,21 +94,21 @@ insert into building(building_no, building_name, location) values(201,”COVID T
 insert into building(building_no, building_name, location) values(203,”STAT Testing”,”Urbana”);
 insert into building(building_no, building_name, location) values(303,”Purification”,”Walkersville”);
 
-insert into room(room_no, building_no, capacity, av_equipment) values(1,100,10,”Projector”);
-insert into room(room_no, building_no, capacity, av_equipment) values(2,100,20,”Printer”);
-insert into room(room_no, building_no, capacity, av_equipment) values(3,100,50,”Projector”);
-insert into room(room_no, building_no, capacity, av_equipment) values(4,100,96,”Projector”);
-insert into room(room_no, building_no, capacity, av_equipment) values(10,101,80,”Printer”);
-insert into room(room_no, building_no, capacity, av_equipment) values(11,101,36,”LED TV”);
-insert into room(room_no, building_no, capacity, av_equipment) values(12,101,9,”LED TV”);
-insert into room(room_no, building_no, capacity, av_equipment) values(20,200,15,”Projector”);
-insert into room(room_no, building_no, capacity, av_equipment) values(21,200,60,”LED TV”);
-insert into room(room_no, building_no, capacity, av_equipment) values(22,200,40,”Printer”);
-insert into room(room_no, building_no, capacity, av_equipment) values(23,200,120,”Printer”);
-insert into room(room_no, building_no, capacity, av_equipment) values(30,300,19,”Printer”);
-insert into room(room_no, building_no, capacity, av_equipment) values(31,300,55,”Speaker”);
-insert into room(room_no, building_no, capacity, av_equipment) values(32,300,60,”Speaker”);
-insert into room(room_no, building_no, capacity, av_equipment) values(33,300,40,”Coffee Maker”);
+insert into room(room_no, building_no, capacity, av_equipment) values(1,100,10,”Audio”);
+insert into room(room_no, building_no, capacity, av_equipment) values(2,100,20,”Audio”);
+insert into room(room_no, building_no, capacity, av_equipment) values(3,100,50,”Audio”);
+insert into room(room_no, building_no, capacity, av_equipment) values(4,100,96,”Audio and Video”);
+insert into room(room_no, building_no, capacity, av_equipment) values(10,101,80,”Audio and Video”);
+insert into room(room_no, building_no, capacity, av_equipment) values(11,101,36,”Audio and Video”);
+insert into room(room_no, building_no, capacity, av_equipment) values(12,101,9,”Audio and Video”);
+insert into room(room_no, building_no, capacity, av_equipment) values(20,200,15,”Audio and Video”);
+insert into room(room_no, building_no, capacity, av_equipment) values(21,200,60,”Audio and Video”);
+insert into room(room_no, building_no, capacity, av_equipment) values(22,200,40,”Video”);
+insert into room(room_no, building_no, capacity, av_equipment) values(23,200,120,”Video”);
+insert into room(room_no, building_no, capacity, av_equipment) values(30,300,19,”Video”);
+insert into room(room_no, building_no, capacity, av_equipment) values(31,300,55,”Conference Call”);
+insert into room(room_no, building_no, capacity, av_equipment) values(32,300,60,”Conference Call”);
+insert into room(room_no, building_no, capacity, av_equipment) values(33,300,40,”Conference Call”);
 
 
 
