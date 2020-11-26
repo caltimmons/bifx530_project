@@ -35,37 +35,40 @@
 				background-color: #001a33;
 			}
 		</style>
-		<title>Cancel A Reservation</title>
+		<title>Make A Reservation</title>
     </head> 
     <body>
 		<ul>
 			<li><a href="home.html" title="Return to the Homepage">Home</a></li>
-			<li><a href="reserve.html" title = "Make a Reservation">Reservation</a></li>
-			<li><a class="active" href="cancel.html" title = "Cancel a Resrvation">Cancel</a></li>
+			<li><a class="active" href="reserve.html" title = "Make a Reservation">Reservation</a></li>
+			<li><a href="cancel.html" title = "Cancel a Resrvation">Cancel</a></li>
 			<li><a href="building.html" title = "See information about our Buildings">Building</a></li>
 			<li><a href="department.html" title = "See Information About our Departments">Department</a></li>
 			<li><a href="contact.html" title = "Get Contact Information for our Company">Contact</a></li>
 			<li><a href="about_us.html" title = "See Information About Us">About Us</a></li>
 		</ul>
 		
-		<?php 
+/* 		<?php 
 			include_once 'db.php';
 			 
 			#form data 
 			$login_id=$_POST['login_id'];
-			$building_no=$_POST['builidng_no'];
 			$room_no=$_POST['room_no'];
+			$employee_id=$_POST['employee_id'];
+			$building_no=$_POST['builiding_no'];
 			$meeting_date=$_POST['meeting_date'];
+			$meeting_type=$_POST['meeting_type'];
 			$start_time=$_POST['start_time'];
-			$sql = "delete from reserves where login_id = :login_id and building_no = :building_no and room_no = :room_no and meeting_date = :meeting_date and start_time = :start_time;"; 
+			$end_time=$_POST['end_time'];
+			$sql = 'insert into reserves(login_id, room_no, employee_id, building_no, meeting_date, meeting_type, start_time, end_time) 
+			values(:login_id, :room_no, employee_id, :building_no, :meeting_date, :meeting_type, :start_time, :end_time);'
 			$stmt = $conn->prepare($sql); 
 
 			# data stored in an associative array 
-			$data = array( 'login_id' => $login_id ,'building_no' => $building_no, 'room_no' => $room_no, 'meeting_date' => $meeting_date, 'start_time' => $start_time); 
+			$data = array( 'login_id' => $login_id , 'room_no' => $room_no, 'employee_id' => $employee_id, 'building_no' => $building_no, 'meeting_date' => $meeting_date, 'meeting_type' => $meeting_type, 'start_time' => $start_time, 'end_time' => $end_time); 
 
 			if($stmt->execute($data)){ 
-				$rows_affected = $stmt->rowCount(); 
-				echo "<h3>".$rows_affected." row deleted sucessfully!</h3>"; 
+				echo "<h3>You have successfully made a reservation!</h3>"; 
 				include 'display.php'; 
 				display("SELECT * FROM reserves;"); 
 			}
@@ -76,6 +79,6 @@
 			}
 			$stmt = null; 
 			$conn = null; 
-		?>
+		?> */
 	</body>
 </html>

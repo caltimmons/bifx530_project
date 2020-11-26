@@ -35,25 +35,25 @@
 				background-color: #001a33;
 			}
 		</style>
-		<title> About Our Buildings </title>
+		<title> About Our Departments </title>
 	</head>
 	<body>
 		<ul>
 			<li><a href="home.html" title="Return to the Homepage">Home</a></li>
 			<li><a href="reserve.html" title = "Make a Reservation">Reservation</a></li>
 			<li><a href="cancel.html" title = "Cancel a Resrvation">Cancel</a></li>
-			<li><a class="active" href="building.html" title = "See information about our Buildings">Building</a></li>
-			<li><a href="department.html" title = "See Information About our Departments">Department</a></li>
+			<li><a href="building.html" title = "See information about our Buildings">Building</a></li>
+			<li><a class="active" href="department.html" title = "See Information About our Departments">Department</a></li>
 			<li><a href="contact.html" title = "Get Contact Information for our Company">Contact</a></li>
 			<li><a href="about_us.html" title = "See Information About Us">About Us</a></li>
 		</ul>
 		<div style="padding-left:16px">
-			<h3>Our Buildings</h3>
+			<h3>Our Departments</h3>
 			<?php include 'index.html'; ?> 
 			<? php
 				include_once 'db.php';
 				include 'display.php'; 
-				display("SELECT * FROM building;"); 
+				display("SELECT * FROM department;"); 
 			?>
 		</div>
 	</body>
