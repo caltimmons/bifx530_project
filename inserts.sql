@@ -1,23 +1,23 @@
 insert into employee(employee_id, name, department_id, team_id) values(30000000,"Carrie Fisher",1,null);
-insert into employee(employee_id, name, department_id, team_id) values(30000001,"Harrison Ford",3,1);
-insert into employee(employee_id, name, department_id, team_id) values(30000002,”John Boyega”,9,1);
-insert into employee(employee_id, name, department_id, team_id) values(30000003,”Daisy Ridley”,7,2);
-insert into employee(employee_id, name, department_id, team_id) values(30000004,”Adam Driver”,5,2);
-insert into employee(employee_id, name, department_id, team_id) values(30000005,”Mark Hamill”,2,2);
-insert into employee(employee_id, name, department_id, team_id) values(30000006,”James Jones”,3,3);
-insert into employee(employee_id, name, department_id, team_id) values(30000007,”John Doe”,1,3);
-insert into employee(employee_id, name, department_id, team_id) values(30000008,”Mike Smith”,8,3);
-insert into employee(employee_id, name, department_id, team_id) values(30000009,”Jane Olson”,10,4);
-insert into employee(employee_id, name, department_id, team_id) values(20000001,”Kelly Smith”,1,1);
-insert into employee(employee_id, name, department_id, team_id) values(20000002,”James Johnson”,3,5);
-insert into employee(employee_id, name, department_id, team_id) values(20000003,”Maria Miller”,5,6);
-insert into employee(employee_id, name, department_id, team_id) values(20000004,”Robert Clark”,2,7);
-insert into employee(employee_id, name, department_id, team_id) values(20000005,”George Davis”,9,8);
-insert into employee(employee_id, name, department_id, team_id) values(20000006,”David Wilson”,7,2);
-insert into employee(employee_id, name, department_id, team_id) values(20000007,”Kathy Taylor”,8,10);
-insert into employee(employee_id, name, department_id, team_id) values(20000008,”Tina Brown”,5,6);
-insert into employee(employee_id, name, department_id, team_id) values(20000009,”Courtney Jones”,2,6);
-insert into employee(employee_id, name, department_id, team_id) values(20000010,”Mary Miller”,10,);
+insert into employee(employee_id, name, department_id, team_id) values(30000001,"Harrison Ford",3,null);
+insert into employee(employee_id, name, department_id, team_id) values(30000002,”John Boyega”,9,null);
+insert into employee(employee_id, name, department_id, team_id) values(30000003,”Daisy Ridley”,7,null);
+insert into employee(employee_id, name, department_id, team_id) values(30000004,”Adam Driver”,5,null);
+insert into employee(employee_id, name, department_id, team_id) values(30000005,”Mark Hamill”,2,null);
+insert into employee(employee_id, name, department_id, team_id) values(30000006,”James Jones”,3,null);
+insert into employee(employee_id, name, department_id, team_id) values(30000007,”John Doe”,1,null);
+insert into employee(employee_id, name, department_id, team_id) values(30000008,”Mike Smith”,8,null);
+insert into employee(employee_id, name, department_id, team_id) values(30000009,”Jane Olson”,10,null);
+insert into employee(employee_id, name, department_id, team_id) values(20000001,”Kelly Smith”,1,null);
+insert into employee(employee_id, name, department_id, team_id) values(20000002,”James Johnson”,3,null);
+insert into employee(employee_id, name, department_id, team_id) values(20000003,”Maria Miller”,5,null);
+insert into employee(employee_id, name, department_id, team_id) values(20000004,”Robert Clark”,2,null);
+insert into employee(employee_id, name, department_id, team_id) values(20000005,”George Davis”,9,null);
+insert into employee(employee_id, name, department_id, team_id) values(20000006,”David Wilson”,7,null);
+insert into employee(employee_id, name, department_id, team_id) values(20000007,”Kathy Taylor”,8,null);
+insert into employee(employee_id, name, department_id, team_id) values(20000008,”Tina Brown”,5,null);
+insert into employee(employee_id, name, department_id, team_id) values(20000009,”Courtney Jones”,2,null);
+insert into employee(employee_id, name, department_id, team_id) values(20000010,”Mary Miller”,null);
 
 insert into login(login_id, employee_id, password) values("cfisher",30000000, "password1");
 insert into login(login_id, password) values(”hford”,”password2”);
@@ -50,16 +50,16 @@ insert into team(team_id, team_name, employee_id) values(7,”Courageous”,2000
 insert into team(team_id, team_name, employee_id) values(8,”Winner”,20000005);
 insert into team(team_id, team_name, employee_id) values(10,”Joe Biden”,20000007);
 
-insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values("cfisher",30000000,100,1,'1990-09-01',"Training",'10:30:00','11:30:00');
-insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”hford”,30000001,100,1,111120,”Training”,1400,1530);
-insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jboyega”,30000002,100,2,112520,”Brainstorming”,0900,1100);
-insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”dridley”,30000003,100,2,120320,”Tier Meeting”,0930,1030);
-insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”adriver”,30000004,100,2,031220,”Skype”,1130,1200)
-insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”mhamill”,30000005,100,3,121020,”skype”,0900,1030);
-insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jjones”,30000006,100,2,111020,”Orientation”,0830,1430);
-insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jdoe”,30000007,100,3,121220,”Brainstorming”,1600,1700);
-insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”msmith”,30000008,100,4,122320,”Brainstorming”,1400,1500);
-insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jolson”,30000009,100,4,122120,”Training”,1000,1130);
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values("cfisher",30000000,100,1,"2001-09-01","Training","10:30:00","11:30:00");
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”hford”,30000001,100,1,"2001-02-09",”Training”,"12:35:00","01:45:00");
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jboyega”,30000002,100,2,"2001-01-10",”Brainstorming”,"09:15:00", "10:30:00");
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”dridley”,30000003,100,2,"2001-11-12",”Tier Meeting”,"03:10:00","4:10:00");
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”adriver”,30000004,100,2,"2001-05-06",”Skype”,"10:00:00","12:00:00")
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”mhamill”,30000005,100,3,"2001-06-05",”Skype”,"11:15:00","12:45:00");
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jjones”,30000006,100,2,"2001-03-07",”Orientation”,"1:15:00","2:45:00");
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jdoe”,30000007,100,3,"2001-09-04",”Brainstorming”,"12:00:00","1:15:00");
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”msmith”,30000008,100,4,"2001-07-05",”Brainstorming”,"01:10:00","3:00:00");
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jolson”,30000009,100,4,"2001-01-09",”Training”,"09:30:00","11:00:00");
 
 insert into department(department_id, department_name) values(1,"Accounting");
 insert into department(department_id, department_name) values(2,”Sales”);
