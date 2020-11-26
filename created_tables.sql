@@ -28,7 +28,7 @@ PRIMARY KEY (building_no)) ENGINE=InnoDB;
 create table room(
 room_no VARCHAR(20),
 capacity VARCHAR(20),
-building_no VARCHAR(20) NOT NULL
+building_no VARCHAR(20) NOT NULL,
 av_equipment VARCHAR(20),
 PRIMARY KEY (room_no, building_no),
 FOREIGN KEY (building_no) REFERENCES building(building_no)
@@ -45,7 +45,7 @@ FOREIGN KEY (employee_id) REFERENCES employee(employee_id)) ENGINE=InnoDB;
 create table employee(
 employee_id VARCHAR(20),
 name VARCHAR(50),
-department_id VARCHAR(20) NOT NULL
+department_id VARCHAR(20) NOT NULL,
 team_id VARCHAR(20),
 PRIMARY KEY (employee_id),
 FOREIGN KEY (team_id) REFERENCES team(team_id),
@@ -55,7 +55,7 @@ ON UPDATE CASCADE) ENGINE=InnoDB;
 create table team(
 team_id VARCHAR(20),
 team_name VARCHAR(20),
-employee_id VARCHAR(20) NOT NULL
+employee_id VARCHAR(20) NOT NULL,
 PRIMARY KEY (team_id),
 FOREIGN KEY (employee_id) REFERENCES employee(employee_id)
 ON UPDATE CASCADE) ENGINE=InnoDB;
