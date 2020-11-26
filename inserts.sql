@@ -1,13 +1,13 @@
 insert into building(building_no, building_name, location) values(100,"Pembro","Frederick");
-insert into building(building_no, building_name, location) values(101,”Tralo”,”Frederick”);
-insert into building(building_no, building_name, location) values(102,”Durva”,”Frederick”);
-insert into building(building_no, building_name, location) values(103,”R&D”,”Walkersville”);
-insert into building(building_no, building_name, location) values(300,”Oligo”,”Walkersville”);
-insert into building(building_no, building_name, location) values(301,”RawM”,”Walkersville”);
-insert into building(building_no, building_name, location) values(200,”Anifro”,”Urbana”);
-insert into building(building_no, building_name, location) values(201,”COVID Testing”,”Urbana”);
-insert into building(building_no, building_name, location) values(203,”STAT Testing”,”Urbana”);
-insert into building(building_no, building_name, location) values(303,”Purification”,”Walkersville”);
+insert into building(building_no, building_name, location) values(101,"Tralo","Frederick");
+insert into building(building_no, building_name, location) values(102,"Durva","Frederick");
+insert into building(building_no, building_name, location) values(103,"R&D","Walkersville");
+insert into building(building_no, building_name, location) values(300,"Oligo","Walkersville");
+insert into building(building_no, building_name, location) values(301,"RawM","Walkersville");
+insert into building(building_no, building_name, location) values(200,"Anifro","Urbana");
+insert into building(building_no, building_name, location) values(201,"COVID Testing","Urbana");
+insert into building(building_no, building_name, location) values(203,"STAT Testing","Urbana");
+insert into building(building_no, building_name, location) values(303,"Purification","Walkersville");
 
 insert into room(room_no, building_no, capacity, av_equipment) values(1,100,10,"Audio");
 insert into room(room_no, building_no, capacity, av_equipment) values(2,100,20,”Audio”);
