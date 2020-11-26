@@ -97,7 +97,7 @@ insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, 
 insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”adriver”,30000004,100,2,"2001-05-06",”Skype”,"10:00:00","12:00:00")
 insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”mhamill”,30000005,100,3,"2001-06-05",”Skype”,"11:15:00","12:45:00");
 insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jjones”,30000006,100,2,"2001-03-07",”Orientation”,"1:15:00","2:45:00");
-insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jdoe”,30000007,100,3,2001-09-04",”Brainstorming”,"12:00:00","1:15:00");
+insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jdoe”,30000007,100,3,"2001-09-04",”Brainstorming”,"12:00:00","1:15:00");
 insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”msmith”,30000008,100,4,"2001-07-05",”Brainstorming”,"01:10:00","3:00:00");
 insert into reserves(login_id, employee_id, building_no, room_no, meeting_date, meeting_type, start_time, end_time) values(”jolson”,30000009,100,4,"2001-01-09",”Training”,"09:30:00","11:00:00");
 
