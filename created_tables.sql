@@ -42,13 +42,13 @@ name VARCHAR(50),
 department_id VARCHAR(20) NOT NULL,
 team_id VARCHAR(20),
 PRIMARY KEY (employee_id),
-FOREIGN KEY (department_id) REFERENCES department(department_id
+FOREIGN KEY (department_id) REFERENCES department(department_id)) ENGINE=InnoDB;
 
-create table Login(
+create table login(
 login_id VARCHAR(20),
 employee_id VARCHAR(20),
 password VARCHAR(20),
-PRIMARY KEY (login_id)
+PRIMARY KEY (login_id),
 FOREIGN KEY (employee_id) REFERENCES employee(employee_id)) ENGINE=InnoDB;
 
 create table team(
@@ -71,5 +71,7 @@ meeting_type VARCHAR(20),
 start_time Time,
 end_time Time,
 PRIMARY KEY (login_id, meeting_date, start_time, room_no, employee_id, building_no),
-FOREIGN KEY (login_id, employee_id) REFERENCES login(login_id, employee_id),
+FOREIGN KEY (employee_id) REFERENCES employee(employee_id)
+ON UPDATE CASCADE,
+FOREIGN KEY (login_id) REFERENCES login(login_id),
 FOREIGN KEY (room_no, building_no) REFERENCES room(room_no, building_no)) ENGINE=InnoDB;
