@@ -4,6 +4,7 @@
 
 use cat17db;
 
+ALTER TABLE employee DROP FOREIGN KEY employee_ibfk_2;
 DROP TABLE IF EXISTS reserves;
 DROP TABLE if EXISTS room;
 DROP TABLE IF EXISTS team;
@@ -35,22 +36,20 @@ FOREIGN KEY (building_no) REFERENCES building(building_no)
 ON DELETE CASCADE
 ON UPDATE CASCADE) ENGINE=InnoDB;
 
-create table Login(
-login_id VARCHAR(20),
-employee_id VARCHAR(20),
-password VARCHAR(20),
-PRIMARY KEY (login_id)
-FOREIGN KEY (employee_id) REFERENCES employee(employee_id)) ENGINE=InnoDB;
-
 create table employee(
 employee_id VARCHAR(20),
 name VARCHAR(50),
 department_id VARCHAR(20) NOT NULL,
 team_id VARCHAR(20),
 PRIMARY KEY (employee_id),
-FOREIGN KEY (team_id) REFERENCES team(team_id),
-FOREIGN KEY (department_id) REFERENCES department(department_id)
-ON UPDATE CASCADE) ENGINE=InnoDB;
+FOREIGN KEY (department_id) REFERENCES department(department_id
+
+create table Login(
+login_id VARCHAR(20),
+employee_id VARCHAR(20),
+password VARCHAR(20),
+PRIMARY KEY (login_id)
+FOREIGN KEY (employee_id) REFERENCES employee(employee_id)) ENGINE=InnoDB;
 
 create table team(
 team_id VARCHAR(20),
@@ -59,6 +58,8 @@ employee_id VARCHAR(20) NOT NULL,
 PRIMARY KEY (team_id),
 FOREIGN KEY (employee_id) REFERENCES employee(employee_id)
 ON UPDATE CASCADE) ENGINE=InnoDB;
+
+ALTER TABLE employee ADD FOREIGN KEY (team_id) REFERENCES team(team_id);
 
 create table reserves( 
 login_id VARCHAR(20),
